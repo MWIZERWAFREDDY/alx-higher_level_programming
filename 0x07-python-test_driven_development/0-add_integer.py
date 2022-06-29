@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Module add-integer
-Adds two integer togethe
+Adds two integer together
 
 """
 
