@@ -29,7 +29,7 @@ class Rectangle:
 
     def __str__(self):
         """Returns an informal and nicely printable string representation
-        of a Rectangle instance, filled with the '#' character."""
+        of a Rectangle instance filled with the '#' character."""
         if self.__height == 0 or self.__width == 0:
             return ''
         rec_str = ''
