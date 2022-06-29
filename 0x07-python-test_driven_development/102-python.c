@@ -1,7 +1,9 @@
 #include <Python.h>
 #include <object.h>
 #include <unicodeobject.h>
-
+/**
+ * prints Python strings
+ */
 
 void print_python_string(PyObject *p)
 {
