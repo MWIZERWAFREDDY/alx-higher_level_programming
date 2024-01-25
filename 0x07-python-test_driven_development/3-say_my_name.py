@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-Module say_my_name and
-Prints a given first name and last name
+Module say_my_name
+Prints a given first name and last name.
 """
 
 

@@ -1,30 +1,27 @@
 #!/usr/bin/python3
-"""Module 11-student.
-Creates a Student class.
-"""
+"""json"""
 
 
 class Student:
-    """Class that defines a student.
-    Public attributes:
-        - first_name
-        - last_name
-        - age
-    Public method to_json().
-    """
+    """A student."""
 
     def __init__(self, first_name, last_name, age):
-        """Initializes the Student instance."""
-
         self.first_name = first_name
         self.last_name = last_name
         self.age = age
 
-    def to_json(self):
-        """Retrieves a dictionary representation
-        of a Student instance.
+    def to_json(self, attrs=None):
+        """Retrieve a dictionary representation of a Student instance."""
+        if attrs is not None and all(isinstance(x, str) for x in attrs):
+            d = {}
+            for k, v in self.__dict__.items():
+                if k in attrs:
+                    d[k] = v
+            return d
+        else:
+            return self.__dict__
 
-        Returns: the dict representation of the instance.
-        """
-
-        return self.__dict__
+    def reload_from_json(self, json):
+        """reload data from json"""
+        for (key, value) in json.items():
+            setattr(self, key, value)

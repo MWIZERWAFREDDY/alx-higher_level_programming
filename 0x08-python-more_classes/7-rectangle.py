@@ -6,7 +6,6 @@ Defines a Rectangle class.
 
 class Rectangle:
     """Rectangle class defined by width and height.
-
     Attributes:
         number_of_instances: number of Rectangle instances,
         increments with every instantitation,
@@ -18,7 +17,6 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         """Initializes a Rectangle instance.
-
         Args:
             width: width of the rectangle
             height: height of the rectangle
@@ -29,7 +27,7 @@ class Rectangle:
 
     def __str__(self):
         """Returns an informal and nicely printable string representation
-        of a Rectangle instance, filled with the '#' character """
+        of a Rectangle instance, filled with the '#' character."""
         if self.__height == 0 or self.__width == 0:
             return ''
         rec_str = ''
@@ -58,7 +56,6 @@ class Rectangle:
     @width.setter
     def width(self, value):
         """Sets the width of a Rectangle instance
-
         Args:
             value: value of the width, must be a positive integer
         """
@@ -76,7 +73,6 @@ class Rectangle:
     @height.setter
     def height(self, value):
         """Sets the height of a Rectangle instance
-
         Args:
             value: value of the height, must be a positive integer
         """
@@ -88,7 +84,6 @@ class Rectangle:
 
     def area(self):
         """Calculates the area of a Rectangle instance
-
         Returns:
             Area of the the rectangle, given by height * width
         """
@@ -96,7 +91,6 @@ class Rectangle:
 
     def perimeter(self):
         """Calculates the perimeter of a Rectangle instance
-
         Returns:
             Perimeter of the rectangle, given by 2 * (height + width)
         """

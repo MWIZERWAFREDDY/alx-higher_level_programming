@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-#nin
 def safe_print_division(a, b):
     try:
         div = a / b

@@ -6,7 +6,6 @@ Defines a Rectangle class.
 
 class Rectangle:
     """Rectangle class defined by width and height.
-
     Attributes:
         number_of_instances: number of Rectangle instances,
         increments with every instantitation,
@@ -18,7 +17,6 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         """Initializes a Rectangle instance.
-
         Args:
             width: width of the rectangle
             height: height of the rectangle
@@ -46,7 +44,7 @@ class Rectangle:
         return "Rectangle({}, {})".format(self.__width, self.__height)
 
     def __del__(self):
-        """Deletes a Rectangle instance """
+        """Deletes a Rectangle instance."""
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
 
@@ -58,7 +56,6 @@ class Rectangle:
     @width.setter
     def width(self, value):
         """Sets the width of a Rectangle instance
-
         Args:
             value: value of the width, must be a positive integer
         """
@@ -76,7 +73,6 @@ class Rectangle:
     @height.setter
     def height(self, value):
         """Sets the height of a Rectangle instance
-
         Args:
             value: value of the height, must be a positive integer
         """
@@ -88,7 +84,6 @@ class Rectangle:
 
     def area(self):
         """Calculates the area of a Rectangle instance
-
         Returns:
             Area of the the rectangle, given by height * width
         """
@@ -96,7 +91,6 @@ class Rectangle:
 
     def perimeter(self):
         """Calculates the perimeter of a Rectangle instance
-
         Returns:
             Perimeter of the rectangle, given by 2 * (height + width)
         """
@@ -107,11 +101,9 @@ class Rectangle:
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         """Finds the biggest Rectangle based on the area
-
         Args:
             rect_1: Rectangle instance
             rect_2: Rectangle instance different from rect_1
-
         Returns:
             The instance with the biggest area,
             or rect_1 if both rectangles have the same area
